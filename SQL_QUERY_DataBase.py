@@ -38,7 +38,6 @@ def queryDatabase(limitParameter):
         if connection:
             cursor.close()
             connection.close()
-            print("PostgreSQL connection is closed log printed successfully")
             # closing database connection.
                 
             

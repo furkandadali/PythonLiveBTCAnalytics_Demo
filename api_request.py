@@ -48,7 +48,7 @@ def job():
     
     p1 = Database(me.market,float(me.last_price),float(me.avg_24h),float(me.buyers),float(me.sellers))
 
-    g1 = graphicdemo_3()
+    
 
 schedule.every(4).seconds.do(job)
 
