@@ -22,7 +22,7 @@ class JSONObject:
       vars(self).update( dict )
   
 def job():
-    response = requests.get("https://www.bitexen.com/api/v1/order_book/BTCTRY/")
+    response = requests.get("API_REQUEST_URL")
     
     res = json.loads(response.text)
 
