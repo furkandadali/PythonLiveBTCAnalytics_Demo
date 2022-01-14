@@ -17,7 +17,7 @@ class Database:
                                   database="postgres")
             cursor = connection.cursor()
 
-            postgreSQL_insert_Query =  """INSERT INTO public."BitExenLiveDemo" ("marketcode","lastprice",dailyaverage,buyerorderprice,sellerorderprice) VALUES (%s,%s,%s,%s,%s);"""
+            postgreSQL_insert_Query =  """INSERT INTO public."DB_NAME" ("marketcode","lastprice",dailyaverage,buyerorderprice,sellerorderprice) VALUES (%s,%s,%s,%s,%s);"""
             record_to_insert = (self.marketcode, self.lastprice, self.dailyaverage,self.buyerorderprice,self.sellerorderprice)
 
             cursor.execute(postgreSQL_insert_Query,record_to_insert)
